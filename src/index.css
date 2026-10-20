@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom styling for article reading experience */
+.article-prose {
+  color: #1e293b;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.article-prose h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0a192f;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  scroll-margin-top: 100px;
+}
+
+.article-prose h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  scroll-margin-top: 100px;
+}
+
+.article-prose p {
+  margin-bottom: 1.5rem;
+}
+
+.article-prose ul, .article-prose ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.article-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.article-prose blockquote {
+  border-left: 4px solid #2563eb;
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: #334155;
+  margin: 1.75rem 0;
+  background: #f1f5f9;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.article-prose strong {
+  color: #0f172a;
+  font-weight: 600;
+}
